@@ -10,11 +10,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f039855fea.js" crossorigin="anonymous"></script>
+    <script defer scr="js/main.js"></script>
 </head>
 <body>
     
 <div id="wrapper">
     <div class="pageWrap">
+
+        <!-- 0 -->
+        <div id="player-container">
+            <div class="play_container_wrap">
+            <div class="flex justify-between w-full">
+              <div class="flex">
+              <button id="playPauseBtn" class="control-button">
+                  <svg viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                  </svg>
+              </button>
+              <div id="equalizer"></div>
+              <audio id="music-player">
+                  <source src="https://redirector.googlevideo.com/videoplayback?expire=1720082078&ei=RlyGZoC3H8iNvcAPi8ScsAg&ip=0.0.0.0&id=36818a2726643c0e&itag=25&source=yt_reference&requiressl=yes&xpc=Egho2aDSNXoBAQ==&susc=ytcm&mime=audio/mpeg&vprv=1&gir=yes&clen=5114812&ratebypass=yes&dur=127.869&lmt=1669912092594514&title=Joy%20To%20The%20World%20-%20DJ%20Williams&ext=mp3&txp=0011224&cmo=secure_transport=yes&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,mime,vprv,gir,clen,ratebypass,dur,lmt,title,ext&sig=AJfQdSswRQIgbiBlR4G0IKktVc3AijKAGEb8Qzo9MeKdaLckWXeYZ4ECIQCq22NWE2zjluzZ-yLTsaKimalQCAJT1tA77Bwi5HXkYw==" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio>
+              </div>
+              <button id="muteBtn" class="control-button">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
+                </svg>
+              </button>
+              </div>
+            </div>
+          </div>
+      
+        <!-- 0 -->
         
         <!-- 1 -->
         <div class="main">
@@ -59,6 +89,9 @@
                     2024년 07월 13일 토요일 오전 11시 30분<br>
                     그린웨딩 1F, 소프트홀
                 </div>
+
+             
+
             </div>
 
 
@@ -97,6 +130,38 @@
                 <div class="parent">
                     <p>서용원 · 신다리화 <span class="small">의 아들</span>동준</p>
                     <p>김만진 · 오인숙 <span class="small">의 딸</span>은미</p>
+                </div>
+                <a href="" class="btn_basic"><i class="fa-solid fa-phone"></i>연락하기</a>
+
+                <div class="popup_type popup_total_call" style="display:block">
+                    <div class="total_call_box">
+                       <div class="title">신랑 <span class="name">서동준</span></div>
+                       <div class="call_btns">
+                        <a href="" class="call"><i class="fa-solid fa-phone"></i>전화하기</a>
+                        <a href="" class="sms"><i class="fa-solid fa-envelope"></i>문자보내기</a>
+                       </div>                       
+                    </div>
+                    <div class="total_call_box">
+                        <div class="title">신부 <span class="name">김은미</span></div>
+                        <div class="call_btns">
+                         <a href="" class="call"><i class="fa-solid fa-phone"></i>전화하기</a>
+                         <a href="" class="sms"><i class="fa-solid fa-envelope"></i>문자보내기</a>
+                        </div>                       
+                     </div>
+                     <div class="total_call_box">
+                        <div class="title">신랑 아버지 <span class="name">서동준</span></div>
+                        <div class="call_btns">
+                         <a href="" class="call"><i class="fa-solid fa-phone"></i>전화하기</a>
+                         <a href="" class="sms"><i class="fa-solid fa-envelope"></i>문자보내기</a>
+                        </div>                       
+                     </div>
+                     <div class="total_call_box">
+                        <div class="title">신부 어머니 <span class="name">서동준</span></div>
+                        <div class="call_btns">
+                         <a href="" class="call"><i class="fa-solid fa-phone"></i>전화하기</a>
+                         <a href="" class="sms"><i class="fa-solid fa-envelope"></i>문자보내기</a>
+                        </div>                       
+                     </div>
                 </div>
             </div>
               
@@ -318,9 +383,102 @@
         </div>
         <!-- //6 -->
 
+         <!-- 7 -->
+         <div id="section7" class="more_info">
+            <div class="common_title">
+                <p class="eng font_eng">Guest book</p>
+                <h3>방명록</h3>               
+            </div>
+            <p class="f_type1 pd_type2 txtc">신랑 신부에게 소중한 축하메세지를 남겨주세요!</p>
+
+            <div class="guest_form_wrap">
+                <div class="guest_form_item">
+                    <input type="text" name="ig_name" id="ig_name" placeholder="이름" class="w49 mr2">
+                    <input type="text" name="ig_password" id="ig_password" placeholder="비밀번호" class="w49">
+                </div>
+                <div class="guest_form_item">
+                    <textarea name="ig_message" id="ig_message" placeholder="메시지 (40자 이내로 등록)"></textarea>
+                </div>
+            </div>
+
+
+            <div class="guest_list_wrap">
+                <ul class="guest_list">
+                    <li>       
+                        <div class="guest_title">
+                            <p class="guest_name">여진스</p>
+                            <div class="button">
+                                <button type="button" class="btn_guest_modify" >수정</button>
+                                <button type="button" class="btn_guest_delete" >삭제</button>           
+                            </div>
+                        </div>  
+                        <div class="guest_cont">결혼 정말 추카ㅎㅐ</div>                       
+                        <span class="guest_time">2024-06-05</span>
+                    </li>
+                </ul>
+            </div>
+
+            
+        
+        </div>
+        <!-- //7 -->
+
     </div>
 </div>
     
+<script>
+    const player = document.getElementById('music-player');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const equalizer = document.getElementById('equalizer');
+    const muteBtn = document.getElementById('muteBtn');
+
+    muteBtn.addEventListener('click', toggleMute);
+
+    // 이퀄라이저 바 생성
+    for (let i = 0; i < 6; i++) {
+        const bar = document.createElement('div');
+        bar.className = 'bar';
+        equalizer.appendChild(bar);
+    }
+
+    const bars = document.querySelectorAll('.bar');
+
+    playPauseBtn.addEventListener('click', togglePlay);
+
+    function togglePlay() {
+        if (player.paused) {
+            player.play();
+            playPauseBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+            startEqualizerAnimation();
+        } else {
+            player.pause();
+            playPauseBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+            stopEqualizerAnimation();
+        }
+    }
+
+    function toggleMute() {
+        player.muted = !player.muted;
+        muteBtn.innerHTML = player.muted ?
+          '<svg viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>' :
+          '<svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>';
+      }
+
+
+    function startEqualizerAnimation() {
+        bars.forEach((bar, index) => {
+            bar.style.animation = `equalizerAnimation ${1 + index * 0.6}s ease-in-out infinite`;
+            bar.style.animationDelay = `${index * 0.2}s`;
+        });
+    }
+
+    function stopEqualizerAnimation() {
+        bars.forEach(bar => {
+            bar.style.animation = 'none';
+            bar.style.height = '5px';
+        });
+    }
+</script>
 
 </body>
 </html>

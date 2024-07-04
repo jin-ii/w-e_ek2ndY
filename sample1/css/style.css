@@ -26,7 +26,44 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 .btn_copy{cursor:pointer;display:inline-block;padding:0 1rem;line-height:1.8rem;text-align:center;background:#f8f8f8;color:#333;font-size:.7rem;margin-left:.7rem;
     border-radius:3px;font-weight:700;border:1px solid #ddd;font-family:"Noto Sans KR";}
 
+.btn_basic{cursor:pointer;display:block;margin:0 auto;width:200px;height:45px;line-height:43px;border:1px solid #ddd;border-radius:3px}
+.btn_basic i{padding-right:.4rem;font-size:.8rem}
 
+/* 0 */
+#player-container {position:fixed;top:0;left:50%;transform:translate(-50%);}
+.play_container_wrap{width:100%;height:2rem;background-color:#333;display:flex;align-items: center;padding:0 1rem}
+.control-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 10px;
+}
+.control-button svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+#equalizer {
+    display: flex;
+    align-items: flex-end;
+    height: 25px;
+    width: 100px;
+}
+.bar {
+    width: 4px;
+    background-color: #8d8d8d;
+    margin: 0 2px;
+    transition: height 0.1s ease;
+}
+@keyframes equalizerAnimation {
+    0% { height: 5px; }
+    50% { height: 13px; }
+    100% { height: 5px; }
+}
+
+
+/* main */
 .main{width:425px;background:#faf4ee;max-width:100%;margin:0 auto;padding-top:2rem}
 .main img{max-width:100%}
 
@@ -70,7 +107,6 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 .couple_info{font-size:1rem;color:#3f3838;line-height:1.6rem}
 
 
-
 .invite_you{max-width:75%;margin:0 auto;padding-bottom:2rem}
 .invite_introduce .parent{padding:1rem 0;line-height:2rem;font-size:1.1rem}
 .invite_introduce .parent p span.small{font-size:.8rem;margin-right:.4rem}
@@ -109,7 +145,8 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 /* 5 */
 /* account */
 .account_box_wrap{width:100%;padding:0 1.4rem}
-.account_box_wrap a{display:flex;align-items:center;width:100%;height:2.4rem;background:#f8f8f8;color:#222;padding-left:1rem;font-size:.9rem}
+.account_box_wrap a{position:relative;display:flex;align-items:center;width:100%;height:2.4rem;background:#f8f8f8;color:#222;padding-left:1rem;font-size:.9rem}
+.account_box_wrap a i{color:#999;position:absolute;right:1rem;}
 .account_box_wrap ul{margin-top:-1px;margin-bottom:.4rem}
 .account_box_wrap ul li{line-height:1rem;border-bottom:1px solid #ddd;padding:.8rem 1rem .6rem 1rem;}
 .account_box_wrap ul li p.bank{display:flex;align-items:center;}
@@ -125,10 +162,19 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 .point_navy{background:#0d347f}
 
 
-
 /* gallery */
 .gallery{padding:2rem 0 4rem}
 .slider_wrap{padding:0 1.4rem}
 .slider_wrap div{border-radius:10px;overflow:hidden}
 .slider_thumbnail{display:flex;gap:2px;margin-top:2px}
+
+/* call sms */
+.popup_type{width:85%;border-radius:10px;margin:0 auto;min-height:10rem;background:#fff;padding:2rem;box-shadow:0 5px 10px #ddd}
+/* .popup_total_cal{height:20rem} */
+.total_call_box{margin-bottom:.5rem}
+.total_call_box .title{font-size:.8rem;padding:.5rem 0 .5rem 0}
+.total_call_box .title span.name{font-size:1rem}
+.total_call_box .call_btns a{display:inline-block;color:#676767;padding-right:.7rem;border:1px solid #ddd;border-radius:3px;background:#fff;height:40px;line-height:40px;
+    padding:0 1rem 0 1rem}
+.total_call_box .call_btns a i{margin-right:.4rem}
 
