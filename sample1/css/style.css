@@ -3,11 +3,11 @@ body{background:#fff3e6}
 .pageWrap{width:425px;max-width:100%;background:#fff;margin:0 auto;position:relative;overflow:hidden;}
 
 /* common */
-.common_title{padding:3rem 0 1rem 0;text-align:center}
-.common_title .eng{font-size:1rem;color:#A88F78;text-transform:uppercase;letter-spacing:.1rem;line-height:2.2rem}
+.common_title{padding:3rem 0 1.2rem 0;text-align:center}
+.common_title .eng{font-size:1rem;color:#A88F78;text-transform:uppercase;letter-spacing:.1rem;line-height:2.2rem;font-weight:600}
 .common_title h3{font-size:1.3rem;color:#E25F5F;font-weight:500}
 
-.common_title2{padding:3rem 0 1rem 0}
+.common_title2{padding:2rem 0 1rem 0}
 h4.h4_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem}
 h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500}
 
@@ -28,10 +28,12 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 
 .btn_basic{cursor:pointer;display:block;margin:0 auto;width:200px;height:45px;line-height:43px;border:1px solid #ddd;border-radius:3px}
 .btn_basic i{padding-right:.4rem;font-size:.8rem}
+.btn_small{cursor:pointer;display:inline-block;padding:0 0.5rem;line-height:1.8rem;text-align:center;background:#f8f8f8;color:#333;
+    font-size:.7rem;border-radius:3px;font-weight:700;border:1px solid #ddd;font-family:"Noto Sans KR";}
 
 /* 0 */
-#player-container {position:fixed;top:0;left:50%;transform:translate(-50%);}
-.play_container_wrap{width:100%;height:2rem;background-color:#333;display:flex;align-items: center;padding:0 1rem}
+#player-container {position:fixed;top:0;left:50%;transform:translate(-50%);width:425px;max-width:100%;}
+.play_container_wrap{width:100%;height:2rem;background-color:transparent;display:flex;align-items: center;padding:0 1rem}
 .control-button {
     background: none;
     border: none;
@@ -40,14 +42,14 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
     margin-right: 10px;
 }
 .control-button svg {
-    width: 24px;
-    height: 24px;
-    fill: white;
+    width: 20px;
+    height: 20px;
+    fill: #dbb5b5;   
 }
 #equalizer {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 20px;
     width: 100px;
 }
 .bar {
@@ -132,6 +134,7 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 .location_address{line-height:1.6rem}
 .location_address .btn_wrap{display:flex;display:flex;justify-content:center;align-items:center;padding-top:.7rem}
 .location_address .btn_wrap a{border-radius:.2rem;height:2rem;font-size:.8rem;display:flex;justify-content:center;align-items:center;}
+.location_address .btn_wrap a i{margin-right:.2rem}
 .btn_addr_copy{background:#ffabab;color:#fff;width:4.5rem;font-size:.8rem;margin-right:.1rem}
 .btn_hall_call{border-radius:.2rem;background:#c9c9c9;color:#fff;width:6.8rem}
 
@@ -149,7 +152,7 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 .account_box_wrap a i{color:#999;position:absolute;right:1rem;}
 .account_box_wrap ul{margin-top:-1px;margin-bottom:.4rem}
 .account_box_wrap ul li{line-height:1rem;border-bottom:1px solid #ddd;padding:.8rem 1rem .6rem 1rem;}
-.account_box_wrap ul li p.bank{display:flex;align-items:center;}
+.account_box_wrap ul li p.bank{display:flex;align-items:center;letter-spacing:0}
 .account_box_wrap ul li p.name{font-size:.9rem;color:#555}
 
 .location_intro_box{padding:1rem 2rem}
@@ -178,3 +181,24 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
     padding:0 1rem 0 1rem}
 .total_call_box .call_btns a i{margin-right:.4rem}
 
+/* 방명록 */
+.guest_form_wrap{padding:0 1.4rem}
+.guest_form_wrap .guest_form_item{width:100%;display:flex;gap:.2rem;margin-bottom:.4rem}
+.guest_form_wrap .guest_form_item input{flex:1;padding:0.1rem 0;height:2rem;border:1px solid #ddd;border-radius:0}
+.guest_form_item textarea{width:100%;height:75px;border:1px solid #ddd;border-radius:0}
+.btn_guest_submit{cursor:pointer;width:100%;height:40px;line-height:40px;display:block;border:1px solid #ddd;color:#666;font-weight:700;font-size:.8rem}
+.guest_list_wrap {padding:0 1.4rem;margin-top:1rem;}
+.guest_list_wrap .guest_list li{border-bottom:1px solid #ddd;padding:0.6rem 0}
+.guest_list_wrap .guest_title{display:flex;position:relative}
+.guest_list_wrap .guest_title .button{position:absolute;right:0}
+.guest_list_wrap .guest_cont{padding:.5rem 0 1rem 0}
+.guest_list_wrap .guest_time{font-size:.8rem;color:#999}
+
+/* footer */
+.footer{text-align:center;padding:2rem 0}
+.footer .footer_img{position:relative;padding:2rem 0 0 0;margin-top:100px}          
+      
+.footer .footer_img .ovry_bottom{position:absolute;bottom:0;left:0;width:100%;height:14rem;
+    background: linear-gradient(-180deg, transparent, #ffffff);}
+.footer .kko_share{background:url(/sample1/images/common/icon_kakaotalk.svg) 20px center no-repeat;background-size:20px;display:inline-block;border-radius:30px;border:1px solid #ddd;padding:1rem 2rem 1rem 3rem}
+.footer .copyright{font-size:.8rem;color:#999;letter-spacing:0;padding-top:1rem}
