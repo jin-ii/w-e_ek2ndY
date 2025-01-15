@@ -33,35 +33,16 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 
 /* 0 */
 #player-container {position:fixed;top:0;left:50%;transform:translate(-50%);width:425px;max-width:100%;}
-.play_container_wrap{width:100%;height:2rem;background-color:transparent;display:flex;align-items: center;padding:0 1rem}
-.control-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    margin-right: 10px;
-}
-.control-button svg {
-    width: 20px;
-    height: 20px;
-    fill: #dbb5b5;   
-}
-#equalizer {
-    display: flex;
-    align-items: flex-end;
-    height: 20px;
-    width: 100px;
-}
-.bar {
-    width: 4px;
-    background-color: #8d8d8d;
-    margin: 0 2px;
-    transition: height 0.1s ease;
-}
+.play_container_wrap{width:100%;height:2rem;background-color:transparent;display:flex;align-items:center}
+.play_container{margin-left:auto}
+.control-button {background:none;border:none;cursor:pointer;margin-right:10px;}
+.control-button svg {width:20px;height:20px;fill:#dbb5b5;}
+#equalizer{display:flex;align-items:flex-end;height:16px}
+.bar {width:3px;background-color:#dbb5b5;margin:0 2px;transition:height 0.1s ease;}
 @keyframes equalizerAnimation {
-    0% { height: 5px; }
-    50% { height: 13px; }
-    100% { height: 5px; }
+    0% {height:4px;}
+    50% {height:12px;}
+    100% {height:4px;}
 }
 
 
@@ -70,34 +51,34 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 .main img{max-width:100%}
 
 .waves{position:relative;width:100%;height:50px;margin-bottom:-7px}
-.wave.top{position:relative;top:35px;transform: scaleY(-1);transition:.3s;display:block;margin-top:-35px}
+.wave.top{position:relative;top:35px;transform:scaleY(-1);transition:.3s;display:block;margin-top:-35px}
 .wave.bottom{position:relative;top:-35px;margin-bottom:-35px;display:block}
 
-.parallax>use{animation: wave_move 25s cubic-bezier(.55,.5,.45,.5) infinite}
+.parallax>use{animation:wave_move 25s cubic-bezier(.55,.5,.45,.5) infinite}
 .parallax>use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s
+    animation-delay:-2s;
+    animation-duration:7s
 }
 .parallax>use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s
+    animation-delay:-3s;
+    animation-duration:10s
 }
 .parallax>use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 14s
+    animation-delay:-4s;
+    animation-duration:14s
 }
 .parallax>use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s
+    animation-delay:-5s;
+    animation-duration:20s
 }
 
 @keyframes wave_move {
     0% {
-        transform: translate3d(-90px,0,0)
+        transform:translate3d(-90px,0,0)
     }
 
     100% {
-        transform: translate3d(85px,0,0)
+        transform:translate3d(85px,0,0)
     }
 }
 
@@ -124,7 +105,7 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 .calendar td span.dday{display:inline-block;z-index:1;border-radius:50%;width:28px;height:28px;background-color:#ffabab;color:#fff}
 
 /* dday_count */
-.dday_count h3{font-weight:600;padding-bottom:.6rem;font-size:1.5rem;color:#000000;letter-spacing:0;font-family:"Cormorant Garamond"}
+.dday_count h3{font-weight:600;padding-bottom:.6rem;font-size:1rem;color:#000000;letter-spacing:0}
 .dday_count p{line-height:1.7rem;letter-spacing:-.02rem}
 .dday_count p.text_count span{color:#E25F5F;font-weight:700}
 
@@ -139,7 +120,7 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 .btn_hall_call{border-radius:.2rem;background:#c9c9c9;color:#fff;width:6.8rem}
 
 .location_map_btn{display:flex;justify-content:center;align-items:center;padding:2rem 0 0 0}
-.location_map_btn{display:flex;padding:0 1.4rem;margin-top:1rem}
+.location_map_btn{display:flex;margin-top:1rem}
 .location_map_btn a{display:flex;flex:1;border-radius:3px;line-height:2.4rem;font-family:"Noto Sans KR";font-size:.8rem;color:#676767;padding:0 1.5rem 0 2.4rem;margin-right:.2rem;border:1px solid #ddd}
 .location_map_btn a.map_t{background:url(/sample1/images/common/icon_map1.png) .5rem center no-repeat;background-size:20px}
 .location_map_btn a.map_kakao{background:url(/sample1/images/common/icon_map2.png) .5rem center no-repeat;background-size:20px}
@@ -175,10 +156,10 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 .popup_type{width:85%;border-radius:10px;margin:0 auto;min-height:10rem;background:#fff;padding:2rem;box-shadow:0 5px 10px #ddd}
 /* .popup_total_cal{height:20rem} */
 .total_call_box{margin-bottom:.5rem}
-.total_call_box .title{font-size:.8rem;padding:.5rem 0 .5rem 0}
+.total_call_box .title{padding:.5rem 0 .5rem 0}
 .total_call_box .title span.name{font-size:1rem}
 .total_call_box .call_btns a{display:inline-block;color:#676767;padding-right:.7rem;border:1px solid #ddd;border-radius:3px;background:#fff;height:40px;line-height:40px;
-    padding:0 1rem 0 1rem}
+    padding:0 1rem 0 1rem;font-size:0.8rem}
 .total_call_box .call_btns a i{margin-right:.4rem}
 
 /* 방명록 */
@@ -189,7 +170,7 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 .btn_guest_submit{cursor:pointer;width:100%;height:40px;line-height:40px;display:block;border:1px solid #ddd;color:#666;font-weight:700;font-size:.8rem}
 .guest_list_wrap {padding:0 1.4rem;margin-top:1rem;}
 .guest_list_wrap .guest_list li{border-bottom:1px solid #ddd;padding:0.6rem 0}
-.guest_list_wrap .guest_title{display:flex;position:relative}
+.guest_list_wrap .guest_title{display:flex;position:relative;height:30px;align-items:center}
 .guest_list_wrap .guest_title .button{position:absolute;right:0}
 .guest_list_wrap .guest_cont{padding:.5rem 0 1rem 0}
 .guest_list_wrap .guest_time{font-size:.8rem;color:#999}
@@ -199,6 +180,6 @@ h5.h5_tit{font-size:1rem;line-height:1.7rem;padding-bottom:.4rem;font-weight:500
 .footer .footer_img{position:relative;padding:2rem 0 0 0;margin-top:100px}          
       
 .footer .footer_img .ovry_bottom{position:absolute;bottom:0;left:0;width:100%;height:14rem;
-    background: linear-gradient(-180deg, transparent, #ffffff);}
+    background:linear-gradient(-180deg, transparent, #ffffff);}
 .footer .kko_share{background:url(/sample1/images/common/icon_kakaotalk.svg) 20px center no-repeat;background-size:20px;display:inline-block;border-radius:30px;border:1px solid #ddd;padding:1rem 2rem 1rem 3rem}
 .footer .copyright{font-size:.8rem;color:#999;letter-spacing:0;padding-top:1rem}
